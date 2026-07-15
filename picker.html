@@ -208,6 +208,11 @@ button.disabled:hover {
 <body>
 <h1>Picker</h1>
 
+<p>Include roles:
+<label><input type="checkbox" name="roles" class="roles" value="test1"> Test 1</label>
+<label><input type="checkbox" name="roles" class="roles" value="test2"> Test 2</label>
+</p>
+
 <p>This Rhythm Heaven favorite picker is a fork of antialiasis' favorite-picker on <a href='https://github.com/antialiasis/favorite-picker'>GitHub</a>.</p>
 
 <div id="container">
@@ -236,93 +241,20 @@ button.disabled:hover {
 var items = [
     // Define your items here
         // Groove
-    {id: 'hoop1', name: 'Hoop Trundling'},
-    {id: 'brolly1', name: 'Brolly Good Show'},
-    {id: 'disc1', name: 'Disc Dog'},
-    {id: 'beast1', name: 'Feeding the Beast'},
-    {id: 'gremix1', name: 'Groove Remix 1'},
-    {id: 'frogket1', name: 'Ribbit Rocket'},
-    {id: 'cars1', name: 'Stop N Go N Stop'},
-    {id: 'hopslide1', name: 'Hop N Slide'},
-    {id: 'pop1', name: 'Pop, Don\'t Drop'},
-    {id: 'gremix2', name: 'Groove Remix 2'},
-    {id: 'kitchen1', name: 'Slice N Dice Kitchen'},
-    {id: 'moon1', name: 'Sneezy Moon'},
-    {id: 'crab1', name: 'Crab Snacks'},
-    {id: 'stoproll1', name: 'Hop ,Stop N Roll'},
-    {id: 'gremix3', name: 'Groove Remix 3'},
-    {id: 'flex1', name: 'Fruit Flex'},
-    {id: 'alien1', name: 'Alien Alphabet'},
-    {id: 'can1', name: 'Can Do'},
-    {id: 'backup1', name: 'Backup Spotlight'},
-    {id: 'gremix4', name: 'Groove Remix 4'},
-    {id: 'flutter1', name: 'Flutter Speed'},
-    {id: 'bolt1', name: 'Lightning Bolting'},
-    {id: 'yum1', name: 'Yum-Bot Simulator'},
-    {id: 'wiper1', name: 'Wiper Bosses'},
-    {id: 'gremix5', name: 'Groove Remix 5'},
-    {id: 'soccer1', name: 'Soccer Dreams'},
-    {id: 'sweep1', name: 'Sweeper Star'},
-    {id: 'a1', name: 'A for Effort'},
-    {id: 'slasher1', name: 'Spirit Slasher'},
-    {id: 'gremix6', name: 'Groove Remix 6'},
-    {id: 'deepsea', name: 'Deep Sea'},
-    {id: 'cars2', name: 'Stop N Go N Stop 2'},
-    {id: 'flex2', name: 'Fruit Flex 2'},
-    {id: 'stoproll2', name: 'Hop Stop N Roll 2'},
-    {id: 'brolly2', name: 'Brolly Good Show 2'},
-    {id: 'gremix7', name: 'Groove Remix 7'},
-    {id: 'yum2', name: 'Yum-Bot Simulator 2'},
-    {id: 'moon2', name: 'Sneezy Moon 2'},
-    {id: 'frogket2', name: 'Ribbit Rocket 2'},
-    {id: 'alien2', name: 'Alien Alphabet 2'},
-    {id: 'gremix8', name: 'Groove Remix 8'},
-    {id: 'hoop2', name: 'Hoop Trundling 2'},
-    {id: 'backup2', name: 'Backup Spotlight 2'},
-    {id: 'flutter2', name: 'Flutter Speed 2'},
-    {id: 'quick1', name: 'Quick Hands'},
-    {id: 'gremix9', name: 'Groove Remix 9'},
-    {id: 'sweep2', name: 'Sweeper Star 2'},
-    {id: 'hopslide2', name: 'Hop N Slide 2'},
-    {id: 'bolt2', name: 'Lightning Bolting 2'},
-    {id: 'soda1', name: 'Soda Hop'},
-    {id: 'gremix10', name: 'Groove Remix 10'},
-    {id: 'soccer2', name: 'Soccer Dreams 2'},
-    {id: 'disc2', name: 'Disc Dog 2'},
-    {id: 'crab2', name: 'Crab Snack 2'},
-    {id: 'sentry1', name: 'Space Sentry'},
-    {id: 'gremix11', name: 'Groove Remix 11'},
-    {id: 'quick2', name: 'Quick Hands 2'},
-    {id: 'slasher2', name: 'Spirit Slasher 2'},
-    {id: 'wiper2', name: 'Wiper Bosses 2'},
-    {id: 'hi51', name: 'High-Five Fever'},
-    {id: 'gremix12', name: 'Groove Remix 12'},
-    {id: 'can2', name: 'Can Do 2'},
-    {id: 'soda2', name: 'Soda Hop 2'},
-    {id: 'a2', name: 'A for Effort 2'},
-    {id: 'germ1', name: 'Germ Aerobics'},
-    {id: 'gremix13', name: 'Groove Remix 13'},
-    {id: 'sentry2', name: 'Space Sentry 2'},
-    {id: 'kitchen2', name: 'Slice N Dice Kitchen 2'},
-    {id: 'pop2', name: 'Pop, Don\'t Drop 2'},
-    {id: 'synchro1', name: 'Synchro Wings'},
-    {id: 'gremix14', name: 'Groove Remix 14'},
-    {id: 'hoop3', name: 'Groove Cast of Characters'},
-    {id: 'germ2', name: 'Germ Aerobics 2'},
-    {id: 'beast2', name: 'Feeding the Beast 2'},
-    {id: 'hi52', name: 'High-Five Fever 2'},
-    {id: 'synchro2', name: 'Synchro Wings 2'},
-    {id: 'gremix15', name: 'Groove Remix 15'},
-    {id: 'gremix16', name: 'Groove Remix 16'},
-    {id: 'gremix17', name: 'Groove Remix 17'},
-    {id: 'gremix18', name: 'Groove Remix 18'},
-    {id: 'gremix19', name: 'Groove Remix 19'},
-    {id: 'gremix20', name: 'Groove Remix 20'}
+    {id: 'hoop1', name: 'Hoop Trundling', role: 'test1'},
+    {id: 'brolly1', name: 'Brolly Good Show', role: 'test2'},
+    {id: 'disc1', name: 'Disc Dog', role: 'test1'}
 ];
 
 var myPicker = new picker.Picker({
     items: items,
-    localStorageKey: 'picker-state'
+    localStorageKey: 'picker-state',
+     defaultSettings: {
+        roles: ['test1', 'test2']
+    },
+    shouldIncludeItem: function(item, settings) {
+        return settings.roles.indexOf(item.role) !== -1
+    }
 });
 
 var pickerUI = new PickerUI(myPicker, {
@@ -332,7 +264,10 @@ var pickerUI = new PickerUI(myPicker, {
         undo: "#undo",
         redo: "#redo",
         evaluating: "#evaluating",
-        favorites: "#favorites"
+        favorites: "#favorites",
+        settings: {
+            roles: '.roles'
+        }
     }
 });
 
