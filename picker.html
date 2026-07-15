@@ -329,6 +329,8 @@ var myPicker = new picker.Picker({
     items: items,
     localStorageKey: 'picker-state',
      defaultSettings: {
+        minBatchSize: 3,
+        maxBatchSize: 6,
         roles: ['groove', 'megamix']
     },
     shouldIncludeItem: function(item, settings) {
