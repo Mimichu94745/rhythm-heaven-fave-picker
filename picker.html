@@ -208,9 +208,9 @@ button.disabled:hover {
 <body>
 <h1>Picker</h1>
 
-<p>Include roles:
-<label><input type="checkbox" name="roles" class="roles" value="test1"> Test 1</label>
-<label><input type="checkbox" name="roles" class="roles" value="test2"> Test 2</label>
+<p>Filter by Game:
+<label><input type="checkbox" name="roles" class="roles" value="groove"> Groove</label>
+<label><input type="checkbox" name="roles" class="roles" value="megamix"> Megamix</label>
 </p>
 
 <p>This Rhythm Heaven favorite picker is a fork of antialiasis' favorite-picker on <a href='https://github.com/antialiasis/favorite-picker'>GitHub</a>.</p>
@@ -241,16 +241,16 @@ button.disabled:hover {
 var items = [
     // Define your items here
         // Groove
-    {id: 'hoop1', name: 'Hoop Trundling', role: 'test1'},
-    {id: 'brolly1', name: 'Brolly Good Show', role: 'test2'},
-    {id: 'disc1', name: 'Disc Dog', role: 'test1'}
+    {id: 'hoop1', name: 'Hoop Trundling', role: 'groove'},
+    {id: 'brolly1', name: 'Brolly Good Show', role: 'groove'},
+    {id: 'disc1', name: 'Disc Dog', role: 'groove'}
 ];
 
 var myPicker = new picker.Picker({
     items: items,
     localStorageKey: 'picker-state',
      defaultSettings: {
-        roles: ['test1', 'test2']
+        roles: ['groove', 'megamix']
     },
     shouldIncludeItem: function(item, settings) {
         return settings.roles.indexOf(item.role) !== -1
