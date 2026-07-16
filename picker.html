@@ -329,7 +329,7 @@ var myPicker = new picker.Picker({
     items: items,
     localStorageKey: 'picker-state',
      defaultSettings: {
-        minBatchSize: 3,
+        minBatchSize: 2,
         maxBatchSize: 6,
         roles: ['groove', 'megamix']
     },
@@ -347,7 +347,8 @@ var pickerUI = new PickerUI(myPicker, {
         evaluating: "#evaluating",
         favorites: "#favorites",
         settings: {
-            roles: '.roles'
+            roles: '.roles',
+            maxBatchSize: '#max-batch-size'
         }
     }
 });
